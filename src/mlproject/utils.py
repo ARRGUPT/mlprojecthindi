@@ -28,7 +28,7 @@ def read_sql_data():                                # will return dataframe
         )
         logging.info("Connected to the mysql database successfully", mydb)
         
-        df = pd.read_sql_query("SELECT * FROM your_table_name", mydb)  # replace 'your_table_name' with actual table name
+        df = pd.read_sql_query("SELECT * FROM student", mydb)
         print(df.head())
         
         return df
